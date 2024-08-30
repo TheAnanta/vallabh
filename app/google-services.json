@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "553663159560",
+    "project_id": "codelingo-ultra-theananta",
+    "storage_bucket": "codelingo-ultra-theananta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553663159560:android:0c1c75df58146395e460bd",
+        "android_client_info": {
+          "package_name": "dev.theananta.recycle360"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOt7ZYFKiZrOWTG1wVP4Jd6G429492wIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553663159560:android:81217038aa056a33e460bd",
+        "android_client_info": {
+          "package_name": "dev.theananta.vallabh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOt7ZYFKiZrOWTG1wVP4Jd6G429492wIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553663159560:android:dfcc76fed6311e36e460bd",
+        "android_client_info": {
+          "package_name": "in.theananta.ultra.codelingo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOt7ZYFKiZrOWTG1wVP4Jd6G429492wIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Vallabh</string>
-    <string name="app_name_vallabh">Vallabh</string>
+    <string name="your_web_client_id">553663159560-a7pj5e94jk66u7q3b12j30m44a3nasdm.apps.googleusercontent.com</string>
+    <string name="onboarding_title_1">Choices.</string>
+    <string name="onboarding_title_2">Vallabh to the rescue.</string>
+    <string name="onboarding_title_3">Essence.</string>
+    <string name="onboarding_subtitle_3">enjoy the essence of the flavoured nourished food.</string>
+    <string name="onboarding_subtitle_2">your schedule shouldn\'t be a bottleneck</string>
+    <string name="onboarding_subtitle_1">an indefinite war in the mind to \nchoose taste vs health</string>
+    <string name="onboarding_desc_1">Health is wealth. In an era of overwhelming array of conflicting nutritional advice Individuals often struggle to maintain balanced diet that aligns with their health goals and unmet health objectives.</string>
+    <string name="onboarding_desc_3">Savor a healthier lifestyle without losing the flavors you love! Get fresh ingredients delivered, plus a cheat meal after your first week. Stay on track, indulge, and enjoy the results!</string>
+    <string name="onboarding_desc_2">Savor a healthier lifestyle without losing the flavors you love! Get fresh ingredients delivered, plus a cheat meal after your first week. Stay on track, indulge, and enjoy the results!</string>
 </resources>

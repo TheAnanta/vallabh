@@ -32,7 +32,7 @@ fun SplashPage(modifier: Modifier = Modifier) {
     ) {
 
         Text(
-            text = stringResource(R.string.app_name_vallabh),
+            text = stringResource(R.string.app_name),
             style = MaterialTheme.typography.displayLarge
         )
         Text(

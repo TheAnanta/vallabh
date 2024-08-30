@@ -17,9 +17,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             VallabhTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    VallabhNavHost(modifier = Modifier.padding(innerPadding))
-                }
+                VallabhNavHost()
             }
         }
     }
