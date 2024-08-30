@@ -17,8 +17,8 @@ data class FlexiNutritionPreferences(
     val type: FlexiNutritionType,
     val spicePreferences: Float = 0.5f,
     val sweetOrHotPreferences: Float = 0.5f,
-    val allergies: Set<String>,
-    val dietaryRestrictions: Set<String>
+    val allergies: Set<String> = setOf(),
+    val dietaryRestrictions: Set<String> = setOf()
 )
 
 data class HealthMetric(
@@ -32,7 +32,7 @@ data class HealthMetric(
     val bmi: Double get() = (weight / (height * height))
 }
 
-enum class Gender(val value: String){
+enum class Gender(val value: String) {
     Male("Male"),
     Female("Female"),
     Other("Other")
@@ -48,19 +48,22 @@ data class UserAddress(
     val pincode: String
 )
 
+private val defaultFlexiNutritionPreferences =
+    FlexiNutritionPreferences(type = FlexiNutritionType.VEGETARIAN)
+
 data class User(
     val name: String,
     val email: String,
-    val address: UserAddress?,
-    val age: Int,
-    val lifestyle: Lifestyle,
-    val gender: String,
-    val dailyRoutine: List<Pair<String, TimeOfDay>>,
-    val levelOfCooking: LevelOfCooking,
-    val numberOfDishes: Int,
-    val favouriteFoodItems: List<String>,
-    val flexiNutritionPreferences: FlexiNutritionPreferences,
-    val healthGoals: List<String>, // atheletic, grow height, hair care, face care, weight loss,etc
-    val healthIssues: List<String>,
-    val healthMetrics: List<HealthMetric>
+    val address: List<UserAddress> = listOf(),
+    val age: Int? = null,
+    val lifestyle: Lifestyle = Lifestyle.ACTIVE,
+    val gender: String = Gender.Male.value,
+    val dailyRoutine: List<Pair<String, TimeOfDay>> = listOf(),
+    val levelOfCooking: LevelOfCooking = LevelOfCooking.BEGINNER,
+    val numberOfDishes: Int = 3,
+    val favouriteFoodItems: List<String> = listOf(),
+    val flexiNutritionPreferences: FlexiNutritionPreferences = defaultFlexiNutritionPreferences,
+    val healthGoals: List<String> = listOf(), // atheletic, grow height, hair care, face care, weight loss,etc
+    val healthIssues: List<String> = listOf(),
+    val healthMetrics: List<HealthMetric> = listOf()
 )
