@@ -90,7 +90,7 @@ fun RegisterPage(
                     title = "Your personal information",
                     subtitle = "This will allow us draft better health goals and time table for you",
                     nextSection = {
-                        section++
+                        registerUser()
                     },
                     finishSection = {
                         registerUser()
@@ -104,6 +104,7 @@ fun RegisterPage(
                         }, label = {
                             Text("Name")
                         }, modifier = Modifier.fillMaxWidth())
+
                         Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                             //textfield
                             TextField(user.email, onValueChange = {
@@ -111,19 +112,47 @@ fun RegisterPage(
                             }, label = {
                                 Text("Email")
                             }, modifier = Modifier.weight(1f))
-                            MultiChoiceSegmentedButtonRow {
-                                Gender.values().toList().map {
-                                    it.value
-                                }.forEachIndexed { index, gender ->
-                                    SegmentedButton(gender == user.gender, onCheckedChange = {
+//                        TextField(
+//                            user.healthMetrics[0].weight.toString(),
+//                            onValueChange = {
+//                                user = user.copy(
+//                                    healthMetrics = listOf(
+//                                        user.healthMetrics[0].copy(
+//                                            weight = it.toDoubleOrNull() ?: 0.0
+//                                        )
+//                                    )
+//                                )
+//                            },
+//                            label = {
+//                                Text("Email")
+//                            },
+//                            modifier = Modifier.weight(1f)
+//                        )
+                            TextField(user.email, onValueChange = {
+                                user = user.copy(email = it)
+                            }, label = {
+                                Text("Email")
+                            }, modifier = Modifier.weight(1f))
+                            //textfield
+                            //textfield
+                        }
+                        MultiChoiceSegmentedButtonRow {
+                            Gender.entries.map {
+                                it.value
+                            }.forEachIndexed { index, gender ->
+                                SegmentedButton(
+                                    gender == user.gender,
+                                    onCheckedChange = {
                                         user = user.copy(gender = gender)
-                                    }, shape = SegmentedButtonDefaults.itemShape(index = )) {
-                                        Text()
-                                    }
+                                    },
+                                    shape = SegmentedButtonDefaults.itemShape(
+                                        index = index,
+                                        count = 3
+                                    )
+                                ) {
+                                    Text(gender)
                                 }
                             }
-                            //textfield
-                            //textfield
                         }
                         //textfield
                     }
